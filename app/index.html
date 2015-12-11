@@ -2,16 +2,10 @@
   <head>
     <script src="../node_modules/angular/angular.js"></script>
     <script src="js/app.module.js"></script>
-    <script src="js/PhoneCatController.js"></script>
+    <script src="js/directives/phoneCatDirective.js"></script>
+    <script src="js/controllers/PhoneCatController.js"></script>
   </head>
   <body ng-app="phoneCat">
-    <div ng-controller="PhoneCatController">
-      <ul ng-repeat="phone in phones">
-        <li>
-          <span>{{phone.name}}</span>
-          <p>{{phone.description}}</p>
-        </li>
-      </ul>
-    </div>
+    <phone-cat-directive></phone-cat-directive>
   </body>
 </html>
